@@ -1,0 +1,29 @@
+{
+  "name": "Notify S corp",
+  "description": "Auto Click for Notify S Page",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "content_scripts": [{
+    "matches": ["https://*/notify-Sa*"],
+    "js": ["content.js"],
+    "all_frames": true
+    }
+  ],
+  "permissions": [
+    "storage", 
+	"tabs"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "auto click for s page",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "images/icon-128.png",
+    "48": "images/icon-48.png",
+    "16":"images/icon-16.png"
+  }
+}
